@@ -12,7 +12,7 @@
             background-color: #f4f4f4;
         }
         header {
-            background-color: #333;
+            background-color: #91d4ab;
             color: #fff;
             padding: 20px 0;
             text-align: center;
@@ -41,7 +41,7 @@
             color: #555;
         }
         footer {
-            background-color: #333;
+            background-color: #91d4ab;
             color: #fff;
             text-align: center;
             padding: 10px 0;
@@ -49,34 +49,100 @@
             bottom: 0;
             width: 100%;
         }
+
+        .logo-div {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .cropped-logo {
+            width: 30px;   /* Desired width */
+            height: 35px;  /* Desired height */
+            object-fit: cover;
+            object-position: 0 0;
+        }
+
+        .logo-row {
+            display: flex;
+            flex-direction: row;
+        }
     </style>
 </head>
 <body>
     <header>
         <h1>Mathilde Dupouy</h1>
-        <!-- <img src="https://raw.githubusercontent.com/yamilvindas/yamilvindas.github.io/main/Photo.jpeg" alt="Photo" width="178" height="150"> -->
-        <h2>Research Topics</h2>
     </header>
     <section>
         <!-- Biography -->
-        <h1>Short Bio</h1>
+        <!-- <h1>Short Bio</h1>
         <p>
         </p>
         <h1>Research Interests</h1>
         <p>
-        </p>
+        </p> -->
 
 
 
         <!-- Publications -->
         <h1>Publications</h1>
-        <h2> Journals </h2>
-        <h2> Conferences with proceedings </h2>
-        <h2> Conferences without proceedings </h2>
-        <h2> Other </h2>
+
+        <!-- <section>
+            <h2>Journals</h2>
+            <ul>
+                <li><a href="#">Title of Journal Paper 1</a></li>
+            </ul>
+        </section> -->
+        
+        <section>
+            <h2>Conferences with Proceedings</h2>
+            <ul>
+                <!-- List of conference papers with proceedings -->
+                <li> Mathilde Dupouy, Yamil Vindas, Marilys Almar, Blaise Kévin Guépié, Philippe Delachartre,
+                <u>Weakly-supervised semantic space structuring: cardiac cycle position for cerebral emboli visualization using contrastive learning</u>. 2025 IEEE
+                International Symposium on Biomedical Imaging (ISBI), Apr 2025, Houston, United States. 
+                <a href="#">DOI in progress</a> 
+                <br/>
+                <div class="logo-row">
+                    <div class="logo-div">
+                        <a href="https://github.com/MathildeDupouy/contrastive-cardiac-cycle/" target="_blank">
+                            <img src="https://upload.wikimedia.org/wikipedia/commons/9/91/Octicons-mark-github.svg" alt="GitHub" style="width: 25px; height: 25px;">
+                        </a> 
+                    </div>
+                    <div class="logo-div">
+                        <a href="https://hal.science/hal-04922841v1" target="_blank">
+                            <img src="https://upload.wikimedia.org/wikipedia/commons/0/0f/HAL_-_Logotype_2021_-_FR.svg" alt="HAL" class="cropped-logo">
+                        </a> 
+                    </div>
+                </div>
+                </li> 
+            </ul>
+        </section>
+        
+        <!-- <section>
+            <h2>Conferences without Proceedings</h2>
+            <ul>
+                <li><a href="#">Conference Paper 1</a></li>
+            </ul>
+        </section> -->
+        
+        <!-- <section>
+            <h2>Other Publications</h2>
+            <ul>
+                <li><a href="#">Technical Report 1</a></li>
+            </ul>
+        </section> -->
+        
+        <section>
+            <h2>Up-to-date Publications on HAL</h2>
+            <p>Explore my latest publications available on the <a href="https://hal.science/">open archive HAL</a>.</p>
+            <!-- Optional: Add a link or integration for live updates if possible -->
+            <iframe src="https://hal.science/search/index/q/*/authIdHal_s/mathilde-dupouy" width="100%" height="500"></iframe>
+        </section>
+        
 
         <!-- Codes -->
-        <h1>Codes</h1>
+        <!-- <h1>Codes</h1> -->
         <!-- <p>
             <a href="https://github.com/yamilvindas/LQ-KNN_DataAnnotation"> Semi-automatic data annotation based on feature space projection and local quality metrics.</a>
         </p> -->
@@ -84,7 +150,7 @@
           
 
         <!-- Presentations -->
-        <h1>Presentations</h1>
+        <!-- <h1>Presentations</h1> -->
         <!-- <p>
             <a href="https://raw.githubusercontent.com/yamilvindas/yamilvindas.github.io/main/Presentations/PhDDefense.pdf"> PhD Defense, 2023.</a>
         </p> -->
@@ -93,10 +159,10 @@
         <!-- Teaching -->
         <h1>Teaching</h1>
         <p>
-          2024-2025: Licence 1 Sciences pour la santé, Data sciences, Université Lyon 1 (campus Rockfeller).
+          2024-2025: Practical classes, Licence 1 Sciences pour la santé, Data sciences, Université Lyon 1 (campus Rockfeller).
         </p>
         <p>
-          2024-2025: Formation initiale aux métiers de l'ingénieur, 1ère année, Mathématiques, INSA Lyon (campus La Doua).
+          2024-2025: Tutorial classes, Formation initiale aux métiers de l'ingénieur, 1ère année, Mathématiques, INSA Lyon (campus La Doua).
         </p>
 
         <h1>Contact</h1>
